@@ -110,7 +110,10 @@
         }
 
         .section-alt {
-            background-color: var(--color-blush);
+            background-image: url(./image/Untitled\ design\ \(2\).png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         /* Animation Classes */
@@ -381,7 +384,7 @@
         /* ===== COUNTDOWN SECTION ===== */
         .countdown {
             padding: 5rem 0;
-            background: #7d7c75;
+            background: #000000;
         }
 
         .countdown-grid {
@@ -411,7 +414,7 @@
         .countdown-number {
             font-family: var(--font-heading);
             font-size: clamp(2.5rem, 5vw, 3.5rem);
-            color: var(--color-gold);
+            color: var(--color-white);
             line-height: 1;
             margin-bottom: 0.5rem;
         }
@@ -440,7 +443,11 @@
             box-shadow: var(--shadow-soft);
         }
         .sectionDate{
-            background-color: #7d7c75;
+            background-image: url(./image/Untitled\ design.png);
+              background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position-x: center;
         }
 
         .calendar-header {

@@ -182,4 +182,16 @@
                 }
             });
         });
-   
+   const music = document.getElementById("bg-music");
+  const btn = document.getElementById("btn");
+
+  btn.addEventListener("click", () => {
+    if (music.muted) {
+      music.muted = false;
+      music.play();
+      btn.textContent = "🔊";
+    } else {
+      music.muted = true;
+      btn.textContent = "🔇";
+    }
+  });

@@ -553,12 +553,12 @@
             box-shadow: var(--shadow-medium);
         }
         .reception{
-            background-image: url(/image/Reception.png);
+            background-image: url(./image/Reception.png);
             background-size: cover;
             background-position: center;
         }
         .venue{
-            background-image: url(/image/Ceremony.jpg);
+            background-image: url(./image/Ceremony.jpg);
             background-size: cover;
             background-position: center;
         }

@@ -289,7 +289,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url(image/background.jpeg);
+            background-image: url(./image/background.jpeg);
             background-attachment: fixed;
             z-index: -2;
         }

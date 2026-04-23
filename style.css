@@ -73,13 +73,18 @@
         .section-title {
             text-align: center;
             margin-bottom: 1rem;
-            color: var(--color-charcoal);
+            color: white;
+        }
+        .titlesblack {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: rgb(0, 0, 0);
         }
 
         .section-subtitle {
             text-align: center;
             font-size: 1.25rem;
-            color: var(--color-charcoal-light);
+            color: var(--color-gold);
             font-style: italic;
             margin-bottom: 3rem;
         }
@@ -153,9 +158,10 @@
         }
 
         .navbar.scrolled {
-            background-color: rgba(253, 248, 243, 0.95);
+            background-color: black;
             backdrop-filter: blur(10px);
             box-shadow: var(--shadow-soft);
+
             padding: 0.75rem 0;
         }
 
@@ -172,12 +178,12 @@
             font-family: var(--font-heading);
             font-size: 1.25rem;
             letter-spacing: 0.1em;
-            color: var(--color-white);
+            color: var(--color-charcoal);
             transition: var(--transition-smooth);
         }
 
         .navbar.scrolled .nav-logo {
-            color: var(--color-charcoal);
+            color: var(--color-white);
         }
 
         .nav-menu {
@@ -191,14 +197,14 @@
             font-size: 0.75rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
-            color: var(--color-white);
+            color: var(--color-charcoal) ;
             position: relative;
             padding: 0.5rem 0;
             transition: var(--transition-smooth);
         }
 
         .navbar.scrolled .nav-link {
-            color: var(--color-charcoal);
+            color: rgb(255, 255, 255);
         }
 
         .nav-link::after {
@@ -232,7 +238,7 @@
         }
 
         .navbar.scrolled .nav-toggle span {
-            background-color: var(--color-charcoal);
+            background-color: rgb(255, 255, 255);
         }
 
         @media (max-width: 768px) {
@@ -247,7 +253,8 @@
                 width: 80%;
                 max-width: 300px;
                 height: 100vh;
-                background-color: var(--color-cream);
+                color: black;
+               
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -290,6 +297,8 @@
             position: absolute;
             inset: 0;
             background-image: url(./image/background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
             background-attachment: fixed;
             z-index: -2;
         }
@@ -375,7 +384,7 @@
         /* ===== COUNTDOWN SECTION ===== */
         .countdown {
             padding: 5rem 0;
-            background: linear-gradient(135deg, var(--color-blush) 0%, var(--color-cream) 100%);
+            background: #7d7c75;
         }
 
         .countdown-grid {
@@ -424,6 +433,7 @@
         }
 
         /* ===== CALENDAR SECTION ===== */
+        
         .calendar-wrapper {
             max-width: 400px;
             margin: 0 auto;
@@ -431,6 +441,9 @@
             border-radius: 20px;
             padding: 2rem;
             box-shadow: var(--shadow-soft);
+        }
+        .sectionDate{
+            background-color: #7d7c75;
         }
 
         .calendar-header {
@@ -539,10 +552,19 @@
             transform: translateY(-8px);
             box-shadow: var(--shadow-medium);
         }
-
+        .reception{
+            background-image: url(/image/Reception.png);
+            background-size: cover;
+            background-position: center;
+        }
+        .venue{
+            background-image: url(/image/Ceremony.jpg);
+            background-size: cover;
+            background-position: center;
+        }
         .venue-image {
             height: 200px;
-            background: linear-gradient(135deg, var(--color-rose), var(--color-gold-light));
+            
             display: flex;
             align-items: center;
             justify-content: center;
@@ -701,6 +723,9 @@
             margin: 0 auto;
         }
 
+        .sectionDress{
+            background-color: #7d7c75;
+        }
         .dresscode-type {
             font-family: var(--font-heading);
             font-size: 2rem;
@@ -710,7 +735,7 @@
 
         .dresscode-desc {
             margin-bottom: 2rem;
-            color: var(--color-charcoal-light);
+            color: var(--color-white);
         }
 
         .color-palette {
@@ -742,7 +767,7 @@
             transform: translateX(-50%);
             font-size: 0.75rem;
             white-space: nowrap;
-            color: var(--color-charcoal-light);
+            color: var(--color-white);
         }
 
         .outfit-examples {
@@ -754,7 +779,7 @@
 
         .outfit-card {
             background: var(--color-white);
-            padding: 2rem 1rem;
+            padding: 8rem 1rem;
             border-radius: 15px;
             text-align: center;
             box-shadow: var(--shadow-soft);
@@ -1141,4 +1166,4 @@
             opacity: 1;
             pointer-events: all;
         }
-        
+    

@@ -780,10 +780,21 @@
             gap: 1.5rem;
             margin-top: 3rem;
         }
-
+        .simiformal{
+            background-image: url(./image/semiformal.png);
+             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .formal{
+            background-image: url(./image/formal\ final.png);
+             background-size: cover;
+            background-repeat: no-repeat;
+             background-position: center;
+        }
         .outfit-card {
-            background: var(--color-white);
-            padding: 8rem 1rem;
+           
+            padding: 16rem 1rem;
             border-radius: 15px;
             text-align: center;
             box-shadow: var(--shadow-soft);

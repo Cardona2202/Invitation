@@ -35,7 +35,7 @@
         });
 
         // ===== COUNTDOWN TIMER =====
-        const weddingDate = new Date('May 23, 2026 15:00:00').getTime();
+        const weddingDate = new Date('May 23, 2026 13:15:00').getTime();
 
         function updateCountdown() {
             const now = new Date().getTime();
@@ -295,16 +295,16 @@
                 }
             });
         });
-   const music = document.getElementById("bg-music");
+    const music = document.getElementById("bg-music");
   const btn = document.getElementById("btn");
 
   btn.addEventListener("click", () => {
-    if (music.muted) {
+    if (music.paused) {
       music.muted = false;
-      music.play();
+      music.play(); // ✅ works on iPhone because it's inside click
       btn.textContent = "🔊";
     } else {
-      music.muted = true;
+      music.pause();
       btn.textContent = "🔇";
     }
   });

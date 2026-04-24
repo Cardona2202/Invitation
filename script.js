@@ -33,7 +33,41 @@
                 menuOverlay.classList.remove('active');
             });
         });
+        // sound
+ window.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("bg-music");
+    const btn = document.getElementById("btn");
+    const intro = document.getElementById("intro");
 
+    // Volume toggle
+    btn.addEventListener("click", () => {
+      music.muted = !music.muted;
+      btn.textContent = music.muted ? "🔇" : "🔊";
+    });
+
+    // Click intro
+    intro.addEventListener("click", () => {
+      music.muted = false;
+      music.play();
+      btn.textContent = "🔊";
+      removeIntro();
+    });
+
+    // Safe remove function
+    function removeIntro() {
+      if (!intro) return;
+      intro.style.opacity = "0";
+      setTimeout(() => {
+        if (intro.parentNode) {
+          intro.parentNode.removeChild(intro);
+        }
+      }, 500);
+    }
+
+    // Auto remove after 5 sec
+    setTimeout(removeIntro, 5000);
+  });
+  
         // ===== COUNTDOWN TIMER =====
         const weddingDate = new Date('May 23, 2026 13:15:00').getTime();
 
@@ -295,17 +329,4 @@
                 }
             });
         });
-    const music = document.getElementById("bg-music");
-  const btn = document.getElementById("btn");
-
-  btn.addEventListener("click", () => {
-    if (music.paused) {
-      music.muted = false;
-      music.play(); // ✅ works on iPhone because it's inside click
-      btn.textContent = "🔊";
-    } else {
-      music.pause();
-      btn.textContent = "🔇";
-    }
-  });
-  
+    

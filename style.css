@@ -835,9 +835,17 @@
             border-radius: 20px;
             box-shadow: var(--shadow-soft);
         }
-
+        .picdivider{
+            width: 100%;
+            background-image: url(./image/DSC09572\ \(2\).jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height:500px;
+        }
         .family-label {
-            font-size: 0.75rem;
+            font-size: 1rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
             color: var(--color-gold);
@@ -886,7 +894,7 @@
             border-radius: 15px;
             text-align: center;
              width: 220px;   /* fixed size */
-            min-height: 120px; /* optional para uniform height */
+            min-height: 120px; /* optional para height */
             box-shadow: var(--shadow-soft);
             transition: var(--transition-smooth);
         }
@@ -900,6 +908,14 @@
             font-size: 1rem;
             letter-spacing: 0.15em;
             text-transform: uppercase;
+            color: var(--color-rose);
+            margin-bottom: 0.5rem;
+        }
+        .sponsor-tag {
+            font-size: 1rem;
+            letter-spacing: 0.15em;
+            
+          
             color: var(--color-rose);
             margin-bottom: 0.5rem;
         }

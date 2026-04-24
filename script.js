@@ -145,19 +145,19 @@
         window.addEventListener('scroll', revealOnScroll);
         window.addEventListener('load', revealOnScroll);
 
-        // ===== LIGHTBOX =====
-        function openLightbox(element) {
-            const lightbox = document.getElementById('lightbox');
-            const content = document.getElementById('lightboxContent');
+        // ===== LIGHTBOX1 =====
+        function openLightbox1(element) {
+            const lightbox = document.getElementById('lightbox1');
+            const content = document.getElementById('lightboxContent1');
             const placeholder = element.querySelector('.gallery-placeholder');
             
-            content.innerHTML = `<div style="font-size: 8rem; background: linear-gradient(135deg, var(--color-rose), var(--color-gold-light)); width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
+        function closeLightbox1() {
+            const lightbox = document.getElementById('lightbox1');
             lightbox.classList.remove('active');
             document.body.style.overflow = '';
         }
@@ -165,10 +165,123 @@
         // Close lightbox with escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
-                closeLightbox();
+                closeLightbox1();
             }
         });
+ // ===== LIGHTBOX2 =====
+        function openLightbox2(element) {
+            const lightbox = document.getElementById('lightbox2');
+            const content = document.getElementById('lightboxContent2');
+            const placeholder = element.querySelector('.gallery-placeholder');
+            
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
 
+        function closeLightbox2() {
+            const lightbox = document.getElementById('lightbox2');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox2();
+            }
+        });
+        // ===== LIGHTBOX3 =====
+        function openLightbox3(element) {
+            const lightbox = document.getElementById('lightbox3');
+            const content = document.getElementById('lightboxContent3');
+            const placeholder = element.querySelector('.gallery-placeholder');
+            
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox3() {
+            const lightbox = document.getElementById('lightbox3');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox3();
+            }
+        }); // ===== LIGHTBOX4 =====
+        function openLightbox4(element) {
+            const lightbox = document.getElementById('lightbox4');
+            const content = document.getElementById('lightboxContent4');
+            const placeholder = element.querySelector('.gallery-placeholder');
+            
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox4() {
+            const lightbox = document.getElementById('lightbox4');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox4();
+            }
+        });
+         // ===== LIGHTBOX5 =====
+        function openLightbox5(element) {
+            const lightbox = document.getElementById('lightbox5');
+            const content = document.getElementById('lightboxContent5');
+            const placeholder = element.querySelector('.gallery-placeholder');
+            
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox5() {
+            const lightbox = document.getElementById('lightbox5');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox5();
+            }
+        });
+         // ===== LIGHTBOX6 =====
+        function openLightbox6(element) {
+            const lightbox = document.getElementById('lightbox6');
+            const content = document.getElementById('lightboxContent6');
+            const placeholder = element.querySelector('.gallery-placeholder');
+            
+            content.innerHTML = `<div style="font-size: 8rem; width: 400px; height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center;">${placeholder.textContent}</div>`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox6() {
+            const lightbox = document.getElementById('lightbox6');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox6();
+            }
+        });
         // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -195,3 +308,4 @@
       btn.textContent = "🔇";
     }
   });
+  

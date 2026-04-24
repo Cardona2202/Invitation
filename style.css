@@ -850,13 +850,16 @@
             box-shadow: var(--shadow-soft);
         }
         .picdivider{
-            width: 100%;
-            background-image: url(./image/DSC09572\ \(2\).jpg);
-            background-position: top;
+            width: 100%;    
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             height:500px;
+        }
+        .divider1{
+            background-image: url(./image/Dv1.png);
+            background-size: cover;
+            background-position:center;
         }
         .family-label {
             font-size: 1rem;
@@ -1025,12 +1028,36 @@
 
         .story-image {
             aspect-ratio: 4/3;
-            background: linear-gradient(135deg, var(--color-rose), var(--color-gold-light));
+            
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 4rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .storypic1{
+            background-image: url(./image/2009.png);
+        }
+        .storypic2{
+            background-image: url(./image/2010.png);
+        }
+        .storypic3{
+            background-image: url(./image/2011.jpg);
+        }
+        .storypic4{
+            background-image: url(./image/2016.jpg);
+        }
+        .storypic5{
+            background-image: url(./image/2019.png);
+        }
+        .storypic6{
+            background-image: url(./image/);
+        }
+        .storypic7{
+            background-image: url(./image/2026.jpg);
         }
 
         .story-content {
@@ -1041,7 +1068,7 @@
 
         .story-year {
             font-family: var(--font-heading);
-            font-size: 0.875rem;
+            font-size: 1.5rem;
             letter-spacing: 0.2em;
             color: var(--color-gold);
             margin-bottom: 0.5rem;
@@ -1057,9 +1084,7 @@
             color: var(--color-charcoal-light);
         }
         .ourstory{
-            background-image: url(./image/Untitled\ design.png);
-            background-size: cover;
-            background-position: center;
+            background-color: black;
         }
 
         @media (max-width: 768px) {
@@ -1120,7 +1145,7 @@
             background-size: cover;
         }
         .placeholder2{
-            background-image: url(./image/Photo2.jpg);
+            background-image: url(./image/Photo2.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1132,7 +1157,7 @@
             background-size: cover;
         }
         .placeholder4{
-            background-image: url(./image/Photo4.jpg);
+            background-image: url(./image/Photo4.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -1194,7 +1219,7 @@
     background-position: center;
 }
 .boxContentC2{
-    background-image: url(./image/Photo2.jpg);
+    background-image: url(./image/Photo2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1206,7 +1231,7 @@
     background-position: center;
 }
 .boxContentC4{
-    background-image: url(./image/Photo4.jpg);
+    background-image: url(./image/Photo4.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1256,7 +1281,7 @@
         .rsvp-message {
             font-size: 1.25rem;
             margin-bottom: 2rem;
-            color: var(--color-charcoal-light);
+            color: var(--color-white);
         }
 
         .rsvp-btn {
@@ -1308,6 +1333,19 @@
         .footer-copy {
             font-size: 0.875rem;
             color: rgba(255, 255, 255, 0.5);
+        }
+        .footer-message {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: var(--color-white);
+        }
+        .rsvpBG{
+            background-image: url(./image/Untitled\ design.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .love{
+            margin-right: 260px;
         }
 
         /* ===== MOBILE MENU OVERLAY ===== */

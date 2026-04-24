@@ -84,7 +84,7 @@
 
         .section-subtitle {
             text-align: center;
-            font-size: 1.25rem;
+            font-size: 2.25rem;
             color: var(--color-gold);
             font-style: italic;
             margin-bottom: 3rem;
@@ -94,7 +94,7 @@
             width: 80px;
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
-            margin: 1.5rem auto;
+            margin: 2.1rem auto;
         }
 
         /* ===== UTILITY CLASSES ===== */
@@ -782,7 +782,12 @@
             white-space: nowrap;
             color: var(--color-white);
         }
-
+        .outfit-cardman{
+            border-radius: 10px;
+            height: 140px;
+            padding-top: 15px;
+            background-color: white;
+        }
         .outfit-examples {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -893,7 +898,7 @@
             padding: 1.5rem;
             border-radius: 15px;
             text-align: center;
-             width: 220px;   /* fixed size */
+             width: 320px;   /* fixed size */
             min-height: 120px; /* optional para height */
             box-shadow: var(--shadow-soft);
             transition: var(--transition-smooth);
@@ -1020,7 +1025,9 @@
         }
 
         .story-content {
-            padding: 1rem;
+            padding: 1.9rem;
+            border-radius: 20px;
+            background-color: white;
         }
 
         .story-year {
@@ -1039,6 +1046,11 @@
 
         .story-text {
             color: var(--color-charcoal-light);
+        }
+        .ourstory{
+            background-image: url(./image/Untitled\ design.png);
+            background-size: cover;
+            background-position: center;
         }
 
         @media (max-width: 768px) {

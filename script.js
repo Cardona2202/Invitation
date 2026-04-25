@@ -34,29 +34,25 @@
             });
         });
         // sound
- window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
     const music = document.getElementById("bg-music");
     const btn = document.getElementById("btn");
     const intro = document.getElementById("intro");
 
-    // Volume toggle
+    // Volume toggle only
     btn.addEventListener("click", () => {
       music.muted = !music.muted;
       btn.textContent = music.muted ? "🔇" : "🔊";
+      if (!music.muted) music.play();
     });
 
-    // Click intro
-    intro.addEventListener("click", () => {
-      music.muted = false;
-      music.play();
-      btn.textContent = "🔊";
-      removeIntro();
-    });
-
-    // Safe remove function
+    // Remove intro animation
     function removeIntro() {
       if (!intro) return;
+
       intro.style.opacity = "0";
+      intro.style.transform = "translateY(20px)";
+
       setTimeout(() => {
         if (intro.parentNode) {
           intro.parentNode.removeChild(intro);
@@ -64,9 +60,11 @@
       }, 500);
     }
 
-    // Auto remove after 5 sec
+    // Auto remove after 5 seconds
     setTimeout(removeIntro, 5000);
   });
+
+  
   
         // ===== COUNTDOWN TIMER =====
         const weddingDate = new Date('May 23, 2026 13:15:00').getTime();
